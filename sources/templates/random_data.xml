@@ -1,0 +1,9 @@
+<root>
+<var name="id" value="{{ random_string }}"/>
+<var name="level" value="{{ random_number }}"/>
+<objects>
+ {% for item in sequence %}
+    <object name="{{ item }}"/>
+ {%- endfor %}
+ </objects>
+</root>
